@@ -1,0 +1,63 @@
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.flex-box-child {
+
+}
+
+.left-image {
+    flex-basis: 100px;
+    margin-right: auto;
+    height: 100%;
+}
+
+.left-image > img {
+    object-fit: cover;
+    height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    .left-image {
+        flex-grow: 1;
+        /*flex-basis: 100px;*/
+        margin-right: auto;
+        /*height: 100%;*/
+    }
+
+    .left-image > img {
+        object-fit: cover;
+        /*height: 100%;*/
+    }
+}
+
+
+.right-text {
+    flex-grow: 1;
+    background-color: white;
+    margin-left: auto;
+    align-items: center;
+    flex-basis: 500px;
+}
+
+
+
+
+/*.first-section {*/
+/*    background-color: white;*/
+/*    flex-grow: 1;*/
+/*    !*min-height: 200px;*!*/
+/*    flex-basis: 50%;*/
+/*    min-width: 300px;*/
+/*    !*background-image: url("https://images.unsplash.com/photo-1515825838458-f2a94b20105a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1376&q=80");*!*/
+/*    background-size: cover;*/
+/*    background-position: center center;*/
+/*    height: 100%;*/
+/*}*/
+
+/*img {*/
+/*    */
+/*    height: 100%;*/
+/*}*/
