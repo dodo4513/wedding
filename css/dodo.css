@@ -1,72 +1,55 @@
-.flex-box {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    background-color: #333333;
+:root {
+    --primary: #e53935;
+    --dark-primary: #11231BFF;
+    --dark-text: lightgray;
+    --full-width: 530px;
 }
-
-.flex-box-child {
-    background-color: #333333;
-}
-
-.narrow-contents {
-    width: 100%;
-    max-width: 2532px;
-    background-color: white;
-    height: 900px;
-    /*height: 100%;*/
-    display: flex;
-}
-
-img {
-    object-fit: cover;
-    width: 100%;
-    height: 650px;
-    /* margin: 20px; */
-}
-
-.left-image {
-    flex-basis: 100px;
-    margin-right: auto;
-    height: 100%;
-}
-
-.left-image > img {
-    object-fit: cover;
-    height: 100%;
-}
-
-@media screen and (min-width: 1200px) {
-    .left-image {
-        flex-grow: 1;
-        /*flex-basis: 100px;*/
-        margin-right: auto;
-        /*height: 100%;*/
-    }
-
-    .left-image > img {
-        object-fit: cover;
-        /*height: 100%;*/
-    }
-}
-
-
-.right-text {
-    flex-grow: 1;
-    background-color: white;
-    margin-left: auto;
-    align-items: center;
-    flex-basis: 500px;
-}
-
 
 @font-face {
-    font-family: 'Humanbumsuk';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Humanbumsuk.woff2') format('woff2');
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'Humanbumsuk', sans-serif;
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    background-color: #333;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    letter-spacing: 5px;
+    color: var(--dark-text)
+}
+
+.narrow {
+    width: 100%;
+    max-width: 530px;
+    background-color: var(--dark-primary);
+    height: 100%;
+    /*margin: 0 auto;*/
+    margin-left: 30%;
+}
+
+#main-image {
+    border-radius: 0 0 0 530px;
+    width: var(--full-width);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+#main-text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+#something {
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+    font-size: 20px;;
 }
