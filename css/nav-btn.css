@@ -7,14 +7,16 @@
 .btn{
     border: 1px solid #1a1a1a;
     display: inline-block;
-    padding: 5px;
+    padding: 2px;
     margin-top: 5px;
     position: relative;
     text-align: center;
     transition: background 600ms ease, color 600ms ease;
 
-    font-size: 8px;
+    font-size: 14px;
+    font-weight: bold;
     letter-spacing: 0;
+    color: gray
 }
 
 input[type="radio"].toggle {
