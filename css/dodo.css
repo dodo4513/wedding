@@ -29,8 +29,8 @@ body {
     max-width: 530px;
     background-color: var(--dark-primary);
     height: 100%;
-    /*margin: 0 auto;*/
-    margin-left: 30%;
+    margin: 0 auto;
+    /*margin-left: 30%;*/
 }
 
 #main-image {
