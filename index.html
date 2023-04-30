@@ -3,49 +3,84 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">-->
-<!--    <link rel="stylesheet" href="css/pico.css">-->
     <link rel="stylesheet" href="css/dodo.css">
     <link rel="stylesheet" href="css/nav-btn.css">
     <title>Hello, world!</title>
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/dodo.js"></script>
-<!--    <link rel="stylesheet" href="css/nav-btn2.css">-->
 </head>
 <body>
-<div id="nav" style="display: flex">
+<div id="nav">
     <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio" checked>
     <label for="toggle-on" class="btn">어둡게</label>
     <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio">
     <label for="toggle-off" class="btn">밝게</label>
-<!--        <input type="checkbox" name="checkbox" class="switch">-->
 </div>
 
-<div class="narrow">
-    <div style="height: 40px;background-color: #070707"></div>
-    <div class="component" style="position: relative">
-        <div id="main-text" style="position: absolute">
-            <div style="font-size: 40px">23<span style="font-size: 30px">.</span> 7<span style="font-size: 30px">.</span> 8</div>
-            <div>황도영 | 이상히</div>
+<main id="main">
+    <div class="narrow_panel" id="dark-mode">
+<!--        <div style="height: 40px;background-color: #070707"></div>-->
+        <div class="component" style="position: relative">
+            <div class="main-text" style="position: absolute">
+                <div style="font-size: 40px">23<span style="font-size: 30px">.</span> 7<span
+                        style="font-size: 30px">.</span> 8
+                </div>
+                <div>황도영 | 이상히</div>
+            </div>
+            <img id="main-image" src="img/we/1-main-dark.png" alt="main"/>
         </div>
-        <img id="main-image" src="img/we/1-main-dark.png" alt="main"/>
+
+        <div class="component" id="something">
+            사랑해요 오늘은 투썸플레이스 입니다 <br/>
+            커커피커피 아이스커피
+        </div>
+
+        <div class="component" id="something1">
+            사랑해요 오늘은 투썸플레이스 입니다 <br/>
+            커커피커피 아이스커피
+        </div>
+
+        <div class="component" id="something2">
+            사랑해요 오늘은 투썸플레이스 입니다 <br/>
+            커커피커피 아이스커피
+        </div>
     </div>
 
-    <div class="component" id="something">
-        사랑해요 오늘은 투썸플레이스 입니다 <br/>
-        커커피커피 아이스커피
-    </div>
+    <div class="narrow_panel" id="white-mode">
+<!--        <div class="top-padding" style="height: 40px;background-color: #070707"></div>-->
+        <div class="component" style="position: relative">
+            <div class="main-text" style="position: absolute">
+                <div style="font-size: 40px">23<span style="font-size: 30px">.</span> 7<span
+                        style="font-size: 30px">.</span> 8
+                </div>
+                <div>황도영 | 이상히</div>
+            </div>
+            <img id="main-image" src="img/we/1-main-white.png" alt="main"/>
+        </div>
 
-    <div class="component" id="something1">
-        사랑해요 오늘은 투썸플레이스 입니다 <br/>
-        커커피커피 아이스커피
-    </div>
+        <div class="component" id="something">
+            사랑해요 오늘은 투썸플레이스 입니다 <br/>
+            커커피커피 아이스커피
+        </div>
 
-    <div class="component" id="something2">
-        사랑해요 오늘은 투썸플레이스 입니다 <br/>
-        커커피커피 아이스커피
-    </div>
+        <div class="component" id="something1">
+            사랑해요 오늘은 투썸플레이스 입니다 <br/>
+            커커피커피 아이스커피
+        </div>
 
-</div>
+        <div class="component" id="something2">
+            사랑해요 오늘은 투썸플레이스 입니다 <br/>
+            커커피커피 아이스커피
+        </div>
+    </div>
+</main>
+
+
 </body>
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="js/dodo.js"></script>
 </html>
+
+
+<div class="narrow_panel" id="white-mode">
+    <div class="component" style="position: relative">
+        <div class="main-text" style="position: absolute">
+        </div></div></div>

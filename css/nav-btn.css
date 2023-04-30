@@ -1,7 +1,7 @@
 #nav {
     position: fixed;
-    /*padding-left: 31%;*/
     z-index: 1;
+    display: flex
 }
 
 .btn{
