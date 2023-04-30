@@ -2,10 +2,27 @@
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    background-color: #333333;
 }
 
 .flex-box-child {
+    background-color: #333333;
+}
 
+.narrow-contents {
+    width: 100%;
+    max-width: 530px;
+    background-color: white;
+    height: 900px;
+    /*height: 100%;*/
+    display: flex;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 650px;
+    /* margin: 20px; */
 }
 
 .left-image {
@@ -43,21 +60,13 @@
 }
 
 
+@font-face {
+    font-family: 'Humanbumsuk';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Humanbumsuk.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
-
-/*.first-section {*/
-/*    background-color: white;*/
-/*    flex-grow: 1;*/
-/*    !*min-height: 200px;*!*/
-/*    flex-basis: 50%;*/
-/*    min-width: 300px;*/
-/*    !*background-image: url("https://images.unsplash.com/photo-1515825838458-f2a94b20105a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1376&q=80");*!*/
-/*    background-size: cover;*/
-/*    background-position: center center;*/
-/*    height: 100%;*/
-/*}*/
-
-/*img {*/
-/*    */
-/*    height: 100%;*/
-/*}*/
+body {
+    font-family: 'Humanbumsuk', sans-serif;
+}
