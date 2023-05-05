@@ -34,13 +34,14 @@ body {
 }
 
 #dark-mode {
-    background-color: var(--dark-primary);
+    background-image: url("../img/etc/back-dark.png");
     color: var(--dark-text);
     /*display: none;*/
 }
 
 #white-mode {
-    background-color: var(--white-primary);
+    /*background-color: var(--white-primary);*/
+    background-image: url("../img/etc/back-white.png");
     color: var(--white-text);
     display: none;
 }
@@ -72,7 +73,7 @@ body {
 }
 
 #dark-mode .sub-title {
-    font-size: 15px;
+    font-size: 20px;
     color: var(--dark-text);
     border-bottom: 1px solid var(--dark-text);
     width: 150px;
@@ -91,4 +92,31 @@ body {
     margin: 0 auto 50px;
     text-align: justify;
     text-align-last: justify;
+}
+
+section {
+    width: var(--full-width);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-text {
+    padding: 0 30px 0 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+section:nth-of-type(2n) {
+    background-color: rgb(255 255 255 / 2%);
+}
+
+table {
+    text-align: center;
+}
+
+table td {
+    width: 40px;
+
+}
+table th {
 }
