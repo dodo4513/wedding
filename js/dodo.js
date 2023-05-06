@@ -1,6 +1,4 @@
 (() => {
-    console.log("hi")
-
     $('#toggle-on').click(function() {
         $('#white-mode').fadeOut()
         $('#dark-mode').fadeIn()
@@ -10,4 +8,14 @@
         $('#white-mode').fadeIn()
         $('#dark-mode').fadeOut()
     });
+
+
+    $(".owl-carousel").owlCarousel({
+        margin:10,
+        loop:true,
+        autoWidth:true,
+        items:4
+    });
+
+    console.log("ready")
 })();
