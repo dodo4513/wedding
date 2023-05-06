@@ -1,0 +1,46 @@
+#navs {
+    width: 400px;
+    height: 40px;
+    /*background-color: lightgray;*/
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#navs {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#navs img {
+    width: 20px;
+    /*padding-top: 10px;*/
+}
+
+#navs a {
+    flex: 1;
+    text-decoration: none;
+    color: lightgray;
+}
+
+#navs .navi {
+    display: flex;
+}
+
+#navs a:nth-child(2) {
+    border-left: 1px solid gray;
+}
+
+.navi img {
+    padding-left: 65px;
+    padding-right: 10px;
+}
+
+.navi span {
+    /*font-size: 10px;*/
+}
+
+a {
+
+}
