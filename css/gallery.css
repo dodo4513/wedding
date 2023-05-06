@@ -1,0 +1,31 @@
+.owl-carousel {
+    width: 390px;
+    margin: 0 auto;
+}
+.owl-carousel .item {
+    background-color: white;
+    /*height: 300px;*/
+    width: 360px;
+    /*height: 400px;*/
+    color: black;
+    object-fit: none;
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.owl-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 20%;
+    margin: 0 6px;
+    background-color: var(--dark-secondary) !important;
+}
+
+.owl-dot.active {
+    background-color: var(--dark-primary) !important;
+}
+

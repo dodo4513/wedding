@@ -14,7 +14,9 @@
         margin:10,
         loop:true,
         autoWidth:true,
-        items:4
+        items:4,
+        // nav: true,
+        dots: true,
     });
 
     console.log("ready")

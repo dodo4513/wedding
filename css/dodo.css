@@ -2,8 +2,8 @@
     --full-width: 430px;
     --full-height: 2000px;
 
-    --dark-primary: #12231b;
-    --dark-text: lightgray;
+    --dark-primary: #c19f6c;
+    --dark-secondary: lightgray;
 
     --white-primary: white;
     --white-text: black;
@@ -35,7 +35,7 @@ body {
 
 #dark-mode {
     background-image: url("../img/etc/back-dark.png");
-    color: var(--dark-text);
+    color: var(--dark-secondary);
     /*display: none;*/
 }
 
@@ -74,8 +74,8 @@ body {
 
 #dark-mode .sub-title {
     font-size: 20px;
-    color: var(--dark-text);
-    border-bottom: 1px solid var(--dark-text);
+    color: var(--dark-secondary);
+    border-bottom: 1px solid var(--dark-secondary);
     width: 150px;
     padding: 2px;
     margin: 0 auto 50px;
@@ -108,21 +108,4 @@ section {
 
 section:nth-of-type(2n) {
     background-color: rgb(255 255 255 / 2%);
-}
-
-table {
-    text-align: center;
-}
-
-table td {
-    width: 40px;
-
-}
-table th {
-}
-
-.owl-carousel .item {
-    background-color: white;
-    height: 100px;
-    color: black;
 }
