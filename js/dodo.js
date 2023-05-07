@@ -1,12 +1,16 @@
 (() => {
     $('#toggle-on').click(function () {
-        $('#white-mode').fadeOut()
-        $('#dark-mode').fadeIn()
+        $('#white-mode').hide()
+        // $('#white-mode').fadeOut()
+        // $('#dark-mode').fadeIn()
+        $('#dark-mode').show()
     });
 
     $('#toggle-off').click(function () {
-        $('#white-mode').fadeIn()
-        $('#dark-mode').fadeOut()
+        // $('#white-mode').fadeIn()
+        $('#white-mode').show()
+        $('#dark-mode').hide()
+        // $('#dark-mode').fadeOut()
     });
 
 

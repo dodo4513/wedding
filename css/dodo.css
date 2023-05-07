@@ -22,15 +22,24 @@ body {
     margin: 0;
 }
 
-#main {
-    max-width: 530px;
-    margin: 0 auto;
+/*#main {*/
+/*    max-width: 530px;*/
+/*    margin: 0 auto;*/
 
-    height: var(--full-height);
-}
+/*    height: var(--full-height);*/
+/*}*/
 
 .narrow_panel {
-    position: absolute;
+    /*position: absolute;*/
+    max-width: 430px;
+    margin: 0 auto;
+
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.narrow_panel::-webkit-scrollbar {
+    display: none;
 }
 
 #dark-mode {
@@ -77,7 +86,7 @@ body {
     color: var(--dark-secondary);
     border-bottom: 1px solid var(--dark-secondary);
     width: 150px;
-    padding: 2px;
+    /*padding: 2px;*/
     margin: 0 auto 50px;
     text-align: justify;
     text-align-last: justify;
@@ -88,14 +97,14 @@ body {
     color: var(--white-text);
     border-bottom: 1px solid var(--white-text);
     width: 150px;
-    padding: 2px;
+    /*padding: 2px;*/
     margin: 0 auto 50px;
     text-align: justify;
     text-align-last: justify;
 }
 
 section {
-    width: var(--full-width);
+    /*width: var(--full-width);*/
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -108,4 +117,9 @@ section {
 
 section:nth-of-type(2n) {
     background-color: rgb(255 255 255 / 2%);
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
