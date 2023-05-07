@@ -6,5 +6,17 @@ table td {
     width: 40px;
 
 }
-table th {
+/*table th:nth-of-type(1) {*/
+/*    background-color: white;*/
+/*}*/
+
+#calendar tbody tr td:nth-child(1) {
+    /*color: #efb358;;*/
+    /*color: white;*/
+}
+
+.calendar-1 {
+    margin-top: 40px;
+    font-size: 22px;
+    letter-spacing: 2px;
 }

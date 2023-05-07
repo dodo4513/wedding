@@ -1,0 +1,26 @@
+.duck {
+    width: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.fish {
+    width: 30px;
+    transform: rotate(180deg);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.heart {
+    width: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+    display: none;
+}

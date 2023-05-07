@@ -1,6 +1,4 @@
 .owl-carousel {
-    width: 390px;
-    margin: 0 auto;
 }
 .owl-carousel .item {
     background-color: white;
@@ -22,7 +20,7 @@
     height: 8px;
     border-radius: 20%;
     margin: 0 6px;
-    background-color: var(--dark-secondary) !important;
+    background-color: var(--dark-text) !important;
 }
 
 .owl-dot.active {

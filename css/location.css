@@ -1,5 +1,9 @@
+#map {
+    height:300px;
+}
+
 #navs {
-    width: 400px;
+    /*width: 400px;*/
     height: 40px;
     /*background-color: lightgray;*/
     margin: 0 auto;
@@ -38,7 +42,7 @@
 }
 
 .navi span {
-    /*font-size: 10px;*/
+    font-size: 15px;
 }
 
 a {

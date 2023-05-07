@@ -1,16 +1,12 @@
 (() => {
-    $('#toggle-on').click(function () {
+    $('#toggle-on').click(() => {
         $('#white-mode').hide()
-        // $('#white-mode').fadeOut()
-        // $('#dark-mode').fadeIn()
         $('#dark-mode').show()
     });
 
-    $('#toggle-off').click(function () {
-        // $('#white-mode').fadeIn()
+    $('#toggle-off').click(() => {
         $('#white-mode').show()
         $('#dark-mode').hide()
-        // $('#dark-mode').fadeOut()
     });
 
 
@@ -46,5 +42,34 @@
     var zoomControl = new kakao.maps.ZoomControl();
     map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
-    console.log("ready")
+
+    //
+    $('.heart-title').click(function () {
+        $(this).next('.heart-contents').slideToggle();
+    });
+
+
+    ////
+    const con = document.querySelector('#dd');
+    const fixedImg = document.querySelector('.duck');
+    const scrollImg = document.querySelector('.fish');
+
+    window.addEventListener('scroll', () => {
+        var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
+        var dist = $('.fish').offset().left - $('.duck').offset().left
+
+        if (dist > 60) {
+            $('.fish').css('right', (scrollPercent / 2) + '%');
+            $('.duck').css('left', (scrollPercent / 2) + '%');
+        } else {
+            $('.heart').fadeIn()
+        }
+    });
+
+    ///
+    const today = new Date();
+    const endDate = new Date('2023-07-08');
+    const diffTime = endDate.getTime() - today.getTime();
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    $('.d-day').text(diffDays)
 })();
