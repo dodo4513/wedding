@@ -42,12 +42,9 @@
     var zoomControl = new kakao.maps.ZoomControl();
     map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
-
-    //
+//
     $('.heart-title').click(function () {
-        alert($(this))
         $(this).next('.heart-contents').slideToggle();
-        $('#dodo3').text("click")
     });
 
 
@@ -58,9 +55,7 @@
 
     window.addEventListener('scroll', () => {
         var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
-        $('#dodo1').text(scrollPercent)
         var dist = $('.fish').offset().left - $('.duck').offset().left
-        $('#dodo2').text(dist)
 
         if (dist > 60) {
             $('.fish').css('right', (scrollPercent / 2) + '%');
@@ -76,4 +71,15 @@
     const diffTime = endDate.getTime() - today.getTime();
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     $('.d-day').text(diffDays)
+
+    //
+    window.onload = function() {
+
+        setTimeout (function () {
+
+            scrollTo(0,0);
+
+        },100);
+
+    }
 })();

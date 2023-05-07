@@ -1,16 +1,15 @@
 .duck {
     width: 30px;
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     z-index: 2;
 }
 
 .fish {
     width: 30px;
-    transform: rotate(180deg);
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     right: 0;
     z-index: 2;
 }
@@ -18,7 +17,7 @@
 .heart {
     width: 20px;
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 2;
