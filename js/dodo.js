@@ -45,7 +45,9 @@
 
     //
     $('.heart-title').click(function () {
+        alert($(this))
         $(this).next('.heart-contents').slideToggle();
+        $('#dodo3').text("click")
     });
 
 
@@ -56,7 +58,9 @@
 
     window.addEventListener('scroll', () => {
         var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
+        $('#dodo1').text(scrollPercent)
         var dist = $('.fish').offset().left - $('.duck').offset().left
+        $('#dodo2').text(dist)
 
         if (dist > 60) {
             $('.fish').css('right', (scrollPercent / 2) + '%');
