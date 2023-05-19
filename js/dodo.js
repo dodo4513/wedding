@@ -59,7 +59,7 @@
         var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
         var dist = $('.fish').offset().left - $('.duck').offset().left
 
-        if (dist > 60) {
+        if (scrollPercent < 90) {
             $('.heart').fadeOut()
         } else {
             $('.heart').fadeIn()
