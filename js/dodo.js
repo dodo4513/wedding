@@ -77,13 +77,13 @@
     $('.d-day').text(diffDays)
 
     //
-    window.onload = function() {
+    window.onload = function () {
 
-        setTimeout (function () {
+        setTimeout(function () {
 
-            scrollTo(0,0);
+            scrollTo(0, 0);
 
-        },100);
+        }, 100);
 
     }
 
@@ -104,18 +104,18 @@
             navigator.clipboard.writeText(accountNumber)
                 .then(() => {
                     console.log('계좌번호가 복사되었습니다.');
+
+// #snackbar 디스플레이를 block으로 변경합니다.
+                    $('#snackbar').fadeIn(300, function () {
+                        setTimeout(function () {
+                            $('#snackbar').fadeOut(300);
+                        }, 2000);
+                    });
+
                 })
                 .catch(err => {
                     console.error('복사 중 오류가 발생했습니다.', err);
                 });
         });
     });
-
-
 })();
-
-function myFunction() {
-    var x = document.getElementById("snackbar");
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-}
