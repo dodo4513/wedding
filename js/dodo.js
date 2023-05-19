@@ -93,7 +93,7 @@
 
 // 각 버튼에 클릭 이벤트를 추가합니다.
     copyButtons.forEach(button => {
-        button.addEventListener('click', () => {
+        button.addEventListener('touchstart', () => {
             // 계좌번호 요소를 찾습니다.
             const accountNumberElement = button.parentNode.querySelector('span:nth-child(2)');
 
