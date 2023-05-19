@@ -86,4 +86,36 @@
         },100);
 
     }
+
+    //
+    // 복사하기 버튼 요소들을 가져옵니다.
+    const copyButtons = document.querySelectorAll('.copy');
+
+// 각 버튼에 클릭 이벤트를 추가합니다.
+    copyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // 계좌번호 요소를 찾습니다.
+            const accountNumberElement = button.parentNode.querySelector('span:nth-child(2)');
+
+            // 계좌번호를 텍스트로 가져옵니다.
+            const accountNumber = accountNumberElement.textContent;
+
+            // 계좌번호를 클립보드에 복사합니다.
+            navigator.clipboard.writeText(accountNumber)
+                .then(() => {
+                    console.log('계좌번호가 복사되었습니다.');
+                })
+                .catch(err => {
+                    console.error('복사 중 오류가 발생했습니다.', err);
+                });
+        });
+    });
+
+
 })();
+
+function myFunction() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}

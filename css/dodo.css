@@ -83,7 +83,7 @@ body {
 
 
 section {
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 30px;
 }
 
@@ -121,11 +121,12 @@ html, body {
     /*background-color: black;*/
     border-top: 4px dotted #464646;
     width: 100%;
-    /*height: 300px;*/
+    height: 20px;
     color: gray;
-    font-size: 12px;
+    font-size: 14px;
     text-align: right;
-    padding-top:15px
+    padding-top:100px
+    /*top: 100*/
 }
 
 #pad {
