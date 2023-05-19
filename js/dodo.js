@@ -9,7 +9,6 @@
         $('#dark-mode').hide()
     });
 
-
     $(".owl-carousel").owlCarousel({
         margin: 10,
         loop: true,
@@ -65,8 +64,8 @@
             $('.heart').fadeIn()
         }
 
-        $('.fish').css('right', ((scrollPercent * 0.8) / 2) + '%');
-        $('.duck').css('left', (scrollPercent * 0.8 / 2) + '%');
+        $('.fish').css('right', ((scrollPercent * 0.9) / 2) + '%');
+        $('.duck').css('left', (scrollPercent * 0.9 / 2) + '%');
     });
 
     ///
