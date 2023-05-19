@@ -53,16 +53,20 @@
     const fixedImg = document.querySelector('.duck');
     const scrollImg = document.querySelector('.fish');
 
+    var limit = 0
+
     window.addEventListener('scroll', () => {
         var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
         var dist = $('.fish').offset().left - $('.duck').offset().left
 
         if (dist > 60) {
-            $('.fish').css('right', (scrollPercent / 2) + '%');
-            $('.duck').css('left', (scrollPercent / 2) + '%');
+            $('.heart').fadeOut()
         } else {
             $('.heart').fadeIn()
         }
+
+        $('.fish').css('right', ((scrollPercent * 0.8) / 2) + '%');
+        $('.duck').css('left', (scrollPercent * 0.8 / 2) + '%');
     });
 
     ///
