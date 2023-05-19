@@ -104,18 +104,18 @@
             navigator.clipboard.writeText(accountNumber)
                 .then(() => {
                     console.log('계좌번호가 복사되었습니다.');
-
-// #snackbar 디스플레이를 block으로 변경합니다.
-                    $('#snackbar').fadeIn(300, function () {
-                        setTimeout(function () {
-                            $('#snackbar').fadeOut(300);
-                        }, 2000);
-                    });
-
                 })
                 .catch(err => {
                     console.error('복사 중 오류가 발생했습니다.', err);
                 });
+        });
+    });
+
+    $(".copy").on("click", function() {
+        $("#snackbar").fadeIn("slow", function() {
+            setTimeout(function() {
+                $("#snackbar").fadeOut("slow");
+            }, 2000);
         });
     });
 })();
