@@ -1,13 +1,13 @@
 (() => {
-    $('#toggle-on').click(() => {
-        $('#white-mode').hide()
-        $('#dark-mode').show()
-    });
-
-    $('#toggle-off').click(() => {
-        $('#white-mode').show()
-        $('#dark-mode').hide()
-    });
+    // $('#toggle-on').click(() => {
+    //     $('#white-mode').hide()
+    //     $('#dark-mode').show()
+    // });
+    //
+    // $('#toggle-off').click(() => {
+    //     $('#white-mode').show()
+    //     $('#dark-mode').hide()
+    // });
 
     $(".owl-carousel").owlCarousel({
         margin: 10,
@@ -74,18 +74,6 @@
     const diffTime = endDate.getTime() - today.getTime();
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     $('.d-day').text(diffDays)
-
-    //
-    window.onload = function () {
-
-        setTimeout(function () {
-
-            scrollTo(0, 0);
-
-        }, 100);
-
-    }
-
     //
     // 복사하기 버튼 요소들을 가져옵니다.
     const copyButtons = document.querySelectorAll('.copy');

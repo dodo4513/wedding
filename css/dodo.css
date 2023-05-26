@@ -81,7 +81,6 @@ body {
 }
 
 
-
 section {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -121,15 +120,29 @@ html, body {
     /*background-color: black;*/
     border-top: 4px dotted #464646;
     width: 100%;
-    height: 20px;
+    height: 300px;
     color: gray;
     font-size: 14px;
-    text-align: right;
-    padding-top:100px
+    text-align: center;
+    padding-top: 100px
     /*top: 100*/
+}
+
+#video {
+    height: 300px;
+    border-radius: 100px 100px 0 0;
+    border: 1px solid black;
 }
 
 #pad {
     height: 80px;
     background-color: #070707;
+}
+
+#last {
+    padding-top: 5px;
+    padding-bottom: 30px;
+    height: 80px;
+    color: darkgray;
+    font-size: 15px;
 }
