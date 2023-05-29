@@ -15,9 +15,9 @@
         autoWidth: true,
         items: 4,
         dots: true,
-        autoplay:true,
-        autoplayTimeout:2500,
-        autoplayHoverPause:true,
+        // autoplay:true,
+        // autoplayTimeout:2500,
+        // autoplayHoverPause:true,
     });
 
     var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
@@ -108,5 +108,13 @@
             }, 2000);
         });
     });
+
+
+//
+    var codeDiv = $('#code'); // 코드 ID를 가진 div 요소
+    var descDiv = $('#desc'); // desc ID를 가진 div 요소
+
+    // descDiv의 높이를 codeDiv의 높이로 설정
+    $('#desc').height($('code').height() + 26 - 30);
 })();
 
