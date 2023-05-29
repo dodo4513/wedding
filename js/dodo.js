@@ -15,9 +15,9 @@
         autoWidth: true,
         items: 4,
         dots: true,
-        // autoplay:true,
-        // autoplayTimeout:2500,
-        // autoplayHoverPause:true,
+        autoplay:true,
+        autoplayTimeout:2500,
+        autoplayHoverPause:true,
     });
 
     var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
@@ -39,12 +39,6 @@
 // 마커가 지도 위에 표시되도록 설정합니다
     marker.setMap(map);
 
-
-// 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
-//     var zoomControl = new kakao.maps.ZoomControl();
-//     map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-
-//
     $('.heart-title').click(function () {
         $(this).next('.heart-contents').slideToggle();
     });
