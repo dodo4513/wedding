@@ -25,22 +25,22 @@ body {
     background-color: #333;
     margin: 0;
     /*height: 10000px;*/
-    height: 100%;
+    /*height: 100%;*/
 }
-html {
-    /*height: 10000px;*/
-    height: 100%;
-}
+/*html {*/
+/*    !*height: 10000px;*!*/
+/*    height: 100%;*/
+/*}*/
 
-main {
-    /*height: 10000px;*/
-    height: 100%;
-}
+/*main {*/
+/*    !*height: 10000px;*!*/
+/*    height: 100%;*/
+/*}*/
 
 .narrow_panel {
     max-width: var(--full-width);
     margin: 0 auto;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
     /*height: 1500px;*/
     /*height: 100%;*/
 }

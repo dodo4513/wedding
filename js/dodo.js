@@ -71,7 +71,6 @@
         $('.duck').css('left', (scrollPercent * 0.85 / 2) + '%');
     });
 
-    ///
     const today = new Date();
     const endDate = new Date('2023-07-08');
     const diffTime = endDate.getTime() - today.getTime();
