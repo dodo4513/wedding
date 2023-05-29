@@ -84,6 +84,7 @@
 // 각 버튼에 클릭 이벤트를 추가합니다.
     copyButtons.forEach(button => {
         button.addEventListener('touchstart', () => {
+            console.log("d")
             // 계좌번호 요소를 찾습니다.
             const accountNumberElement = button.parentNode.querySelector('span:nth-child(2)');
 
@@ -102,6 +103,10 @@
     });
 
     $(".copy").on("click", function() {
+        var accountNumber = $(this).prev().prev().text();
+
+        var numbersOnly = accountNumber.replace(/[^0-9]/g, '');
+        navigator.clipboard.writeText(numbersOnly)
         $("#snackbar").fadeIn("slow", function() {
             setTimeout(function() {
                 $("#snackbar").fadeOut("slow");
