@@ -56,7 +56,7 @@
         }
 
         $('.corn_box').css('right', ((scrollPercent * 0.85) / 2) + '%');
-        $('.duck_box').css('left', (scrollPercent * 0.85 / 2) + '%');
+        $('.duck_box').css('left', (scrollPercent * 0.83 / 2) + '%');
     });
 
     const today = new Date();
