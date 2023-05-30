@@ -43,17 +43,11 @@
         $(this).next('.heart-contents').slideToggle();
     });
 
-
-    ////
-    const con = document.querySelector('#dd');
-    const fixedImg = document.querySelector('.duck');
-    const scrollImg = document.querySelector('.fish');
-
     var limit = 0
 
     window.addEventListener('scroll', () => {
         var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
-        var dist = $('.fish').offset().left - $('.duck').offset().left
+        var dist = $('.corn_box').offset().left - $('.duck_box').offset().left
 
         if (scrollPercent < 90) {
             $('.heart').fadeOut()
@@ -61,8 +55,8 @@
             $('.heart').fadeIn()
         }
 
-        $('.fish').css('right', ((scrollPercent * 0.85) / 2) + '%');
-        $('.duck').css('left', (scrollPercent * 0.85 / 2) + '%');
+        $('.corn_box').css('right', ((scrollPercent * 0.85) / 2) + '%');
+        $('.duck_box').css('left', (scrollPercent * 0.85 / 2) + '%');
     });
 
     const today = new Date();

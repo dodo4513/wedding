@@ -1,12 +1,29 @@
-.duck {
-    width: 30px;
+.duck_box {
+    width: 70px;
     position: fixed;
     bottom: 10px;
     left: 0;
     z-index: 2;
 }
 
-.fish {
+.dodo {
+    width: 40px;
+    z-index: 4;
+}
+
+.chee {
+    position: absolute;
+    top: -7px;
+    left: -14px;
+    width: 30px;
+    z-index: -1;
+}
+
+.corn {
+    width: 40px;
+}
+
+.corn_box {
     width: 30px;
     position: fixed;
     bottom: 10px;
