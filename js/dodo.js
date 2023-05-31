@@ -15,9 +15,9 @@
         autoWidth: true,
         items: 4,
         dots: true,
-        autoplay: true,
-        autoplayTimeout: 2500,
-        autoplayHoverPause: true,
+        // autoplay: true,
+        // autoplayTimeout: 2500,
+        // autoplayHoverPause: true,
     });
 
 
