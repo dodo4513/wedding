@@ -20,22 +20,6 @@
         autoplayHoverPause: true,
     });
 
-    var container = document.getElementById('map');
-    var options = {
-        center: new kakao.maps.LatLng(37.509631433510066, 127.05946733190677), //지도의 중심좌표.
-        level: 3,
-        draggable: false,
-    };
-
-    var map = new kakao.maps.Map(container, options);
-
-    var markerPosition = new kakao.maps.LatLng(37.509631433510066, 127.05946733190677);
-
-    var marker = new kakao.maps.Marker({
-        position: markerPosition
-    });
-
-    marker.setMap(map);
 
     $('.heart-title').click(function () {
         $(this).next('.heart-contents').slideToggle();
@@ -90,5 +74,39 @@
             }, 2000);
         });
     });
+
+
+
+    var currentUrl = window.location.href;
+
+// URL에서 '?' 이후의 문자열(쿼리 문자열) 가져오기
+    var queryString = currentUrl.substring(currentUrl.indexOf('?') + 1);
+
+// '&'를 기준으로 쿼리 문자열을 매개변수와 값의 쌍으로 분할하여 배열로 만듦
+    var paramArray = queryString.split('&');
+
+// 매개변수와 값을 담을 객체
+    var params = {};
+
+// 각 매개변수와 값을 객체에 저장
+    paramArray.forEach(function(param) {
+        var paramParts = param.split('=');
+        var paramName = decodeURIComponent(paramParts[0]);
+        var paramValue = decodeURIComponent(paramParts[1]);
+        params[paramName] = paramValue;
+    });
+
+// 'v' 매개변수 값 가져오기
+    var vParam = params.v;
+    console.log(vParam)
+    if (vParam) {
+        $('.duck_box').empty().html(
+            '<img class="dodo" src="img/icon/horse.png"/>'
+        )
+        $('.corn_box').empty().html(
+            '<img class="corn" src="img/icon/monkey.png"/>'
+        )
+    }
+
 })();
 
